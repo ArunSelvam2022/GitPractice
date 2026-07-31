@@ -2,3 +2,4 @@ Learning Git
 
 Today I learned about Untracked Files.
 Today I learned Commit.
+Git Status is awesome.
