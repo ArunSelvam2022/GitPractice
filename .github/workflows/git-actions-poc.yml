@@ -1,0 +1,29 @@
+name: Git Actions POC
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  poc:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Display branch
+        run: echo "Branch: ${{ github.ref }}"
+
+      - name: Display commit
+        run: echo "Commit: ${{ github.sha }}"
+
+      - name: Display repository
+        run: echo "Repository: ${{ github.repository }}"
+
+      - name: List files
+        run: ls -la
+
+      - name: POC completed
+        run: echo "GitHub Actions POC completed successfully!"
